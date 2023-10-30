@@ -8,23 +8,46 @@ public class Triangle extends TwoDimensionalShape {
 
     public Triangle(double base, double height) {
         super(2);
+
+        int choice;
+
         while (true) {
+            System.out.println("You have selected a Triangle\nWhich triangle would you like to construct? ");
+            System.out.println("1.Equilateral\n2.Isosceles\n3.Right");
+
             try {
-                System.out.println("You have selected a Triangle\nWhat is the base? ");
-                this.base = scanner.nextDouble();
-                System.out.println("What is the height? ");
-                this.height = scanner.nextDouble();
-                break;
+                choice = scanner.nextInt();
+                scanner.nextLine(); // Consume newline
+
+                if (choice >= 1 && choice <= 3) {
+                    break;
+                } else {
+                    System.out.println("Invalid input. Please select from one of the options");
+                }
             } catch (java.util.InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a valid number");
                 scanner.nextLine();
             }
         }
+        switch (choice) {
+            case 1:
+                this.base = ShapeInputValidator.getPositiveInput("You have selected Equilateral. What is its length? ");
+                this.height = ShapeInputValidator.getPositiveInput("What is the height? ");
+                break;
+            case 2:
+                this.base = ShapeInputValidator.getPositiveInput("You have selected Isosceles. What is the base?  ");
+                this.height = ShapeInputValidator.getPositiveInput("What is the height? ");
+                break;
+            case 3:
+                this.base = ShapeInputValidator.getPositiveInput("You have selected Right. What is the base? ");
+                this.height = ShapeInputValidator.getPositiveInput("What is the height? ");
+                break;
+        }
     }
 
     @Override
     public double getArea() {
-        System.out.println("The area of the Triangle is " + (1.5 * (base / height)));
-        return 1.5 * (base / height);
+        System.out.println("The area of the Triangle is " + (0.5 * (base * height)));
+        return 0.5 * (base * height);
     }
 }

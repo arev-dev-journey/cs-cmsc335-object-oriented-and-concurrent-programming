@@ -8,18 +8,8 @@ public class Cylinder extends ThreeDimensionalShape {
 
     public Cylinder(double radius, double height) {
         super(3);
-        while (true) {
-            try {
-                System.out.println("You have selected a Cylinder\nWhat is the radius? ");
-                this.radius = scanner.nextDouble();
-                System.out.println("What is the height? ");
-                this.height = scanner.nextDouble();
-                break;
-            } catch (java.util.InputMismatchException e) {
-                System.out.println("Invalid input. Please enter a valid number");
-                scanner.nextLine();
-            }
-        }
+        this.radius = ShapeInputValidator.getPositiveInput("You have selected a Cylinder\nWhat is the radius? ");
+        this.height = ShapeInputValidator.getPositiveInput("What is the height? ");
     }
 
     @Override

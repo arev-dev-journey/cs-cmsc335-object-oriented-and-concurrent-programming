@@ -8,18 +8,8 @@ public class Cone extends ThreeDimensionalShape {
 
     public Cone(double radius, double height) {
         super(3);
-        while (true) {
-            try {
-                System.out.println("You have selected a Cone\nWhat is the radius? ");
-                this.radius = scanner.nextDouble();
-                System.out.println("What is the height? ");
-                this.height = scanner.nextDouble();
-            } catch (java.util.InputMismatchException e) {
-                System.out.println("Invalid input. Please enter a valid number");
-                scanner.nextLine();
-            }
-        }
-
+        this.radius = ShapeInputValidator.getPositiveInput("You have selected a Cone\nWhat is the radius? ");
+        this.height = ShapeInputValidator.getPositiveInput("What is the height? ");
     }
 
     @Override
