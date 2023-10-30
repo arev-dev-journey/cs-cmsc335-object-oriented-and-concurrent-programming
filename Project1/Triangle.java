@@ -8,10 +8,18 @@ public class Triangle extends TwoDimensionalShape {
 
     public Triangle(double base, double height) {
         super(2);
-        System.out.println("You have selected a Triangle\nWhat is the base? ");
-        this.base = scanner.nextDouble();
-        System.out.println("What is the height? ");
-        this.height = scanner.nextDouble();
+        while (true) {
+            try {
+                System.out.println("You have selected a Triangle\nWhat is the base? ");
+                this.base = scanner.nextDouble();
+                System.out.println("What is the height? ");
+                this.height = scanner.nextDouble();
+                break;
+            } catch (java.util.InputMismatchException e) {
+                System.out.println("Invalid input. Please enter a valid number");
+                scanner.nextLine();
+            }
+        }
     }
 
     @Override

@@ -7,8 +7,16 @@ public class Sphere extends ThreeDimensionalShape {
 
     public Sphere(double radius) {
         super(3);
-        System.out.print("You have selected a Sphere\nWhat is the radius? ");
-        this.radius = scanner.nextDouble();
+        while (true) {
+            try {
+                System.out.print("You have selected a Sphere\nWhat is the radius? ");
+                this.radius = scanner.nextDouble();
+                break;
+            } catch (java.util.InputMismatchException e) {
+                System.out.println("Invalid input. Please enter a valid number");
+                scanner.nextLine();
+            }
+        }
     }
 
     @Override
