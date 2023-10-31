@@ -1,3 +1,11 @@
+
+/*
+ * file name: Square.java
+ * author: Alex Reveles
+ * date: 10/31/2023
+ * purpose: Construct a square with parameter sideLength
+ * Return its area as a double
+ * */
 import java.util.Scanner;
 
 public class Square extends TwoDimensionalShape {

@@ -1,3 +1,11 @@
+
+/*
+ * file name: Cone.java
+ * author: Alex Reveles
+ * date: 10/31/2023
+ * purpose: Construct a cone with parameters radius and height
+ * Return its volume as a double
+ * */
 import java.util.Scanner;
 
 public class Cone extends ThreeDimensionalShape {

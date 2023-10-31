@@ -1,3 +1,11 @@
+
+/*
+ * file name: Sphere.java
+ * author: Alex Reveles
+ * date: 10/31/2023
+ * purpose: Construct a sphere with parameter radius
+ * Return its volume as a double
+ * */
 import java.util.Scanner;
 
 public class Sphere extends ThreeDimensionalShape {

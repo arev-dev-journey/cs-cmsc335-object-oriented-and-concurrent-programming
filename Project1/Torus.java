@@ -1,3 +1,11 @@
+
+/*
+ * file name: Main
+ * author: Alex Reveles
+ * date: 10/31/2023
+ * purpose: Construct a torus with parameters majorRadius and minorRadius
+ * Return its volume as a double
+ * */
 import java.util.Scanner;
 
 public class Torus extends ThreeDimensionalShape {

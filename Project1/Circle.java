@@ -1,3 +1,11 @@
+
+/*
+ * file name: Circle.java
+ * author: Alex Reveles
+ * date: 10/31/2023
+ * purpose: Construct a circle with parameter radius
+ * Return its area as a double
+ * */
 import java.util.Scanner;
 
 public class Circle extends TwoDimensionalShape {

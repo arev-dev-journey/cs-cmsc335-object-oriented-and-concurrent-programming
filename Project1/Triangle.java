@@ -1,3 +1,11 @@
+
+/*
+ * file name: Main
+ * author: Alex Reveles
+ * date: 10/31/2023
+ * purpose: Construct a triangle with parameters base and height
+ * Return its area as a double
+ * */
 import java.util.Scanner;
 
 public class Triangle extends TwoDimensionalShape {

@@ -1,3 +1,11 @@
+
+/*
+ * file name: Cube.java
+ * author: Alex Reveles
+ * date: 10/31/2023
+ * purpose: Construct a cube with parameter sideLength
+ * Return its volume as a double
+ * */
 import java.util.Scanner;
 
 public class Cube extends ThreeDimensionalShape {

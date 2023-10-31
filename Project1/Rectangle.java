@@ -1,3 +1,11 @@
+
+/*
+ * file name: Rectangle.java
+ * author: Alex Reveles
+ * date: 10/31/2023
+ * purpose: Construct a rectangle with
+ * parameters length and width. Return its area as a double
+ * */
 import java.util.Scanner;
 
 public class Rectangle extends TwoDimensionalShape {

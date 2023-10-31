@@ -1,3 +1,10 @@
+
+/*
+ * file name: ShapeInputValidator.java
+ * author: Alex Reveles
+ * date: 10/31/2023
+ * purpose: Error checking values entered
+ */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
