@@ -85,7 +85,6 @@ public class ShapeMenu {
                 height = 0.0;
                 Cone cone = new Cone(radius, height);
                 System.out.println("The volume of the Cone is " + cone.getVolume());
-
                 break;
             case 8:
                 radius = 0.0;
