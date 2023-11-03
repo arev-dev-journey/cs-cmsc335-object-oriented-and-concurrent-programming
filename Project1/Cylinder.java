@@ -22,8 +22,8 @@ public class Cylinder extends ThreeDimensionalShape {
 
     @Override
     public double getVolume() {
-        System.out.println("The volume of the Cylinder is " + Math.PI * (radius * radius) * height);
-        return Math.PI * (radius * radius) * height;
+        double volume = Math.PI * (radius * radius) * height;
+        return Double.parseDouble(String.format("%.2f", volume));
     }
 
 }

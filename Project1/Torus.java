@@ -23,9 +23,8 @@ public class Torus extends ThreeDimensionalShape {
 
     @Override
     public double getVolume() {
-        System.out.println(
-                "The volume of the Torus is " + (2) * (Math.PI * Math.PI) * majorRadius * (minorRadius * minorRadius));
-        return (2) * (Math.PI * Math.PI) * majorRadius * (minorRadius * minorRadius);
+        double volume = (2.0) * (Math.PI * Math.PI) * majorRadius * (minorRadius * minorRadius);
+        return Double.parseDouble(String.format("%.2f", volume));
     }
 
 }

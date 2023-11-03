@@ -20,7 +20,7 @@ public class Circle extends TwoDimensionalShape {
 
     @Override
     public double getArea() {
-        System.out.println("The area of the Circle is " + (Math.PI * (radius * radius)));
-        return Math.PI * (radius * radius);
+        double area = Math.PI * (radius * radius);
+        return Double.parseDouble(String.format("%.2f", area));
     }
 }

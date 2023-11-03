@@ -23,8 +23,8 @@ public class Rectangle extends TwoDimensionalShape {
 
     @Override
     public double getArea() {
-        System.out.println("The area of the Rectangle is " + length * width);
-        return length * width;
+        double area = length * width;
+        return Double.parseDouble(String.format("%.2f", area));
     }
 
 }

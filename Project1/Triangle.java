@@ -55,7 +55,7 @@ public class Triangle extends TwoDimensionalShape {
 
     @Override
     public double getArea() {
-        System.out.println("The area of the Triangle is " + (0.5 * (base * height)));
-        return 0.5 * (base * height);
+        double area = 0.5 * (base * height);
+        return Double.parseDouble(String.format("%.2f", area));
     }
 }

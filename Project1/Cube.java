@@ -20,7 +20,7 @@ public class Cube extends ThreeDimensionalShape {
 
     @Override
     public double getVolume() {
-        System.out.println("The volume of the Cube is " + Math.pow(sideLength, numberOfDimensions));
-        return Math.pow(sideLength, numberOfDimensions);
+        double volume = Math.pow(sideLength, numberOfDimensions);
+        return Double.parseDouble(String.format("%.2f", volume));
     }
 }

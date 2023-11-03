@@ -20,7 +20,7 @@ public class Square extends TwoDimensionalShape {
 
     @Override
     public double getArea() {
-        System.out.println("The area of the Square is " + Math.pow(sideLength, numberOfDimensions));
-        return (Math.pow(sideLength, numberOfDimensions));
+        double area = (Math.pow(sideLength, numberOfDimensions));
+        return Double.parseDouble(String.format("%.2f", area));
     }
 }

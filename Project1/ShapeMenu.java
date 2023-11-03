@@ -51,52 +51,53 @@ public class ShapeMenu {
             case 1:
                 double radius = 0.0;
                 Circle circle = new Circle(radius);
-                circle.getArea();
+                System.out.println("The area of the Circle is " + circle.getArea());
                 break;
             case 2:
                 double length = 0.0;
                 double width = 0.0;
                 Rectangle rectangle = new Rectangle(length, width);
-                rectangle.getArea();
+                System.out.println("The area of the Rectangle is " + rectangle.getArea());
                 break;
             case 3:
                 double sideLength = 0.0;
                 Square square = new Square(sideLength);
-                square.getArea();
+                System.out.println("The area of the Square is " + square.getArea());
                 break;
             case 4:
                 double base = 0.0;
                 double height = 0.0;
                 Triangle triangle = new Triangle(base, height);
-                triangle.getArea();
+                System.out.println("The area of the Triangle is " + triangle.getArea());
                 break;
             case 5:
                 radius = 0.0;
                 Sphere sphere = new Sphere(radius);
-                sphere.getVolume();
+                System.out.println("The volume of the Sphere is " + sphere.getVolume());
                 break;
             case 6:
                 sideLength = 0.0;
                 Cube cube = new Cube(sideLength);
-                cube.getVolume();
+                System.out.println("The volume of the Cube is " + cube.getVolume());
                 break;
             case 7:
                 radius = 0.0;
                 height = 0.0;
                 Cone cone = new Cone(radius, height);
-                cone.getVolume();
+                System.out.println("The volume of the Cone is " + cone.getVolume());
+
                 break;
             case 8:
                 radius = 0.0;
                 height = 0.0;
                 Cylinder cylinder = new Cylinder(radius, height);
-                cylinder.getVolume();
+                System.out.println("The volume of the Cylinder is " + cylinder.getVolume());
                 break;
             case 9:
                 double majorRadius = 0.0;
                 double minorRadius = 0.0;
                 Torus torus = new Torus(majorRadius, minorRadius);
-                torus.getVolume();
+                System.out.println("The volume of the Torus is " + torus.getVolume());
                 break;
             default:
                 System.out.println("Invalid choice. Please try again.");

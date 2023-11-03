@@ -22,8 +22,8 @@ public class Cone extends ThreeDimensionalShape {
 
     @Override
     public double getVolume() {
-        System.out.println("The volume of the Cone is " + (1 / 3) * (Math.PI * (radius * radius) * height));
-        return (1 / 3) * (Math.PI * (radius * radius) * height);
+        double volume = (1.0 / 3.0) * (Math.PI * (radius * radius) * height);
+        return Double.parseDouble(String.format("%.2f", volume));
     }
 
 }

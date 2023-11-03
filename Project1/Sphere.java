@@ -20,7 +20,7 @@ public class Sphere extends ThreeDimensionalShape {
 
     @Override
     public double getVolume() {
-        System.out.println("The volume of the Sphere is " + (4.0 / 3.0) * Math.PI * Math.pow(radius, 3));
-        return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+        double volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+        return Double.parseDouble(String.format("%.2f", volume));
     }
 }
